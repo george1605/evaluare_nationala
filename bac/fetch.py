@@ -3,7 +3,12 @@ from dotenv import load_dotenv
 import os
 from bs4 import BeautifulSoup
 import csv
+import numpy as np
+import pandas as pd
+import pyarrow.parquet as pq
+import pyarrow as pa
 from itertools import zip_longest
+import re
 
 LICEE = {
     968: 'COLEGIUL "RICHARD WURMBRAND", IAȘI',
@@ -15,6 +20,8 @@ LICEE = {
     61: 'COLEGIUL NAȚIONAL, IAŞI'
 }
 
+EXPORT_PARQUET = True # If you want to export to Parquet
+PARQUET_FILE = 'licee.parquet'
 VERBOSE = True
 URL_BASE = 'https://bacalaureat.edu.ro/Pages/JudetUnitRezultMedie.aspx?Jud=26&IdUnitInv='
 HEADERS = {
@@ -55,6 +62,8 @@ def parse_page(html):
 
         if len(tds) > 15:
             media = tds[15].get_text(strip=True)
+            if media == '':
+                media = '-1'
             results.append(media)
 
     return results
@@ -71,7 +80,11 @@ def fetch_data(liceu_id, liceu_name):
     soup = BeautifulSoup(r.text, "html.parser")
 
     dropdown = soup.find(id="ContentPlaceHolderBody_DropDownList2")
-    pages = len(dropdown.find_all("option"))
+    options = dropdown.find_all("option")
+    last_opt = options[-1].get_text(strip=True)
+
+    match = re.search(r'pag\.\s*(\d+)', last_opt, re.IGNORECASE)
+    pages = int(match.group(1)) if match else 1
 
     state = extract_state(soup)
     results = parse_page(r.text)
@@ -112,5 +125,21 @@ if __name__ == "__main__":
         nume, data = fetch_data(liceu_id, liceu_name)
         all_data[nume] = data
 
-    write_csv(all_data)
-    print("Data written to licee_data.csv")
+    if EXPORT_PARQUET:
+        # Exporting to parquet instead of csv
+        max_len = max(len(grades) for grades in all_data.values())
+        data = {}
+        for school, grades in all_data.items():
+            arr = np.array(sorted(grades), dtype=np.float32)
+            arr = np.pad(
+                arr,
+                (0, max_len - len(arr)),
+                constant_values=-1.0
+            )
+            data[school] = arr
+        pand_data = pd.DataFrame(data)
+        pand_data.to_parquet(PARQUET_FILE)
+        print(f"Data written to {PARQUET_FILE}")
+    else:
+        write_csv(all_data)
+        print("Data written to licee_data.csv")
