@@ -4,9 +4,11 @@ import csv
 import matplotlib.pyplot as plt
 import multiprocessing as mp
 from typing import Optional
+from scipy import signal
 
 LOG_FILE=open("stats.log", "w") # For console you can set it to None
 GENERATE_HISTOGRAMS=True
+CALCULATE_CONVOLUTION=True
 
 with open("medii_finale_cont.csv", "r", newline="", encoding="utf-8") as f:
     reader = csv.reader(f)
@@ -61,6 +63,9 @@ values_2025, counts_2025 = np.unique(np.round(medii_2025, 1), return_counts=True
 most_frequent_2025 = values_2025[np.argmax(counts_2025)]
 most_frequent = values[np.argmax(counts)]
 print(f"Most frequent grade in 2025: {most_frequent_2025}, in 2026: {most_frequent}", file=LOG_FILE)
+
+if CALCULATE_CONVOLUTION:
+    print(f"Generated convolution array: ", signal.fftconvolve(medii, medii_2025, "valid"), file=LOG_FILE)
 
 def histogram(year=2025) -> str | None:
     if year not in [2025, 2026]:
