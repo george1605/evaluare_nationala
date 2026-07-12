@@ -3,22 +3,35 @@ import numpy as np
 import csv
 import matplotlib.pyplot as plt
 import multiprocessing as mp
-from typing import Optional
 from scipy import signal
+import pandas as pd
 
 LOG_FILE=open("stats.log", "w") # For console you can set it to None
 GENERATE_HISTOGRAMS=True
 CALCULATE_CONVOLUTION=True
+USE_PARQUET = True # If you want to export to Parquet
+PARQUET_FILE1 = 'en.parquet'
+PARQUET_FILE2 = 'en_2025.parquet'
 
-with open("medii_finale_cont.csv", "r", newline="", encoding="utf-8") as f:
-    reader = csv.reader(f)
-    next(reader)  # Skip header
-    medii = [float(row[0]) for row in reader if row[0]]
+if USE_PARQUET:
+    medii = []
+    df1 = pd.read_parquet(PARQUET_FILE1)
+    df2 = pd.read_parquet(PARQUET_FILE2)
+    for _, row in df1.iterrows():
+        medii.append(row)
+    for _, row in df2.iterrows():
+        medii.append(row)
 
-with open("medii_finale_2025.csv", "r", newline="", encoding="utf-8") as f:
-    reader = csv.reader(f)
-    next(reader)  # Skip header
-    medii_2025 = [float(row[0]) for row in reader if row[0]][0:3000] # Limit to first 3000 for comparison
+else:
+    with open("medii_finale_cont.csv", "r", newline="", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        next(reader)  # Skip header
+        medii = [float(row[0]) for row in reader if row[0]]
+
+    with open("medii_finale_2025.csv", "r", newline="", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        next(reader)  # Skip header
+        medii_2025 = [float(row[0]) for row in reader if row[0]][0:3000] # Limit to first 3000 for comparison
 
 print("Comparing 2026 and 2025 grades:", file=LOG_FILE)
 print("\n--- 2025 Grades --- ", file=LOG_FILE)

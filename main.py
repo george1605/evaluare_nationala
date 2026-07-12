@@ -3,6 +3,7 @@ import time
 
 import requests
 from bs4 import BeautifulSoup
+import pandas as pd
 
 BASE_URL = "https://evaluare.edu.ro/Evaluare/CandFromJudIAD.aspx"
 
@@ -14,6 +15,8 @@ HEADERS = {
     )
 }
 
+EXPORT_PARQUET = True # If you want to export to Parquet
+PARQUET_FILE = 'en.parquet'
 all_medii = []
 
 for page in range(1, 151):
@@ -61,9 +64,14 @@ for page in range(1, 151):
 
 print(f"\nTotal grades: {len(all_medii)}")
 
-with open("medii_finale_cont.csv", "w", newline="", encoding="utf-8") as f:
-    writer = csv.writer(f)
-    writer.writerow(["medie_finala"])
-    writer.writerows([[m] for m in all_medii])
+if EXPORT_PARQUET:
+    df = pd.DataFrame.from_dict({ "medii": all_medii })
+    df.to_parquet(PARQUET_FILE)
+    print(f"Saved to {PARQUET_FILE}")
+else:    
+    with open("medii_finale_cont.csv", "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["medie_finala"])
+        writer.writerows([[m] for m in all_medii])
 
-print("Saved to medii_finale.csv")
+    print("Saved to medii_finale.csv")
