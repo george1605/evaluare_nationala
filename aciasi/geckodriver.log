@@ -1,0 +1,191 @@
+1784465956662	geckodriver	INFO	Listening on 127.0.0.1:57660
+1784465959728	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57661" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\George\\AppData\\Local\\Temp\\rust_mozprofileSNJvJo"
+Dynamically enable window occlusion 0
+1784465960208	Marionette	INFO	Marionette enabled
+1784465960309	Marionette	INFO	Listening on port 57693
+WebDriver BiDi listening on ws://127.0.0.1:57661
+Read port: 57693
+1784465960432	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 182: TypeError: can't access property "documentGlobal", this._element is null
+1784465963723	Marionette	INFO	Stopped listening on port 57693
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 50: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+console.error: (new Error("Unable to arm timer, the object has been finalized.", "resource://gre/modules/DeferredTask.sys.mjs", 279))
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 50: TypeError: can't access property "QueryInterface", aWindow.docShell is null
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/UrlClassifierListManager.sys.mjs, line 465: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+1784466981236	geckodriver	INFO	Listening on 127.0.0.1:60557
+1784466984320	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60558" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\George\\AppData\\Local\\Temp\\rust_mozprofile01frKP"
+Dynamically enable window occlusion 0
+1784466984653	Marionette	INFO	Marionette enabled
+1784466984744	Marionette	INFO	Listening on port 60582
+Read port: 60582
+WebDriver BiDi listening on ws://127.0.0.1:60558
+1784466984795	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+1784466987105	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+[WARN  glean_core::upload] Attempted to enqueue a duplicate ping 357d4249-baee-4cca-8420-43ead473feb0 at /submit/firefox-crashreporter/deletion-request/1/357d4249-baee-4cca-8420-43ead473feb0.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+eorge\\AppData\\Local\\Temp\\rust_mozprofileZRk7aO"
+Dynamically enable window occlusion 0
+1784467034035	Marionette	INFO	Marionette enabled
+1784467034128	Marionette	INFO	Listening on port 54250
+WebDriver BiDi listening on ws://127.0.0.1:54238
+Read port: 54250
+1784467034229	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+1784467036370	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+JavaScript warning: https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FPqNlKlolfn3Y1LYDKESE6ap9Nx119gMRpoCQAX-dQyWdgC9TATwOKai8qxS51EqjHivbUxAsSNZBR42HxTKWy5pCU7ZWQDs9WaO-PCfyRo, line 1872: Script terminated by timeout at:
+IsPluginListEmpty@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FPqNlKlolfn3Y1LYDKESE6ap9Nx119gMRpoCQAX-dQyWdgC9TATwOKai8qxS51EqjHivbUxAsSNZBR42HxTKWy5pCU7ZWQDs9WaO-PCfyRo:1872:45
+UnregisterAll@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FPqNlKlolfn3Y1LYDKESE6ap9Nx119gMRpoCQAX-dQyWdgC9TATwOKai8qxS51EqjHivbUxAsSNZBR42HxTKWy5pCU7ZWQDs9WaO-PCfyRo:1893:17
+StopImpl@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FPqNlKlolfn3Y1LYDKESE6ap9Nx119gMRpoCQAX-dQyWdgC9TATwOKai8qxS51EqjHivbUxAsSNZBR42HxTKWy5pCU7ZWQDs9WaO-PCfyRo:1987:32
+Stop@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FPqNlKlolfn3Y1LYDKESE6ap9Nx119gMRpoCQAX-dQyWdgC9TATwOKai8qxS51EqjHivbUxAsSNZBR42HxTKWy5pCU7ZWQDs9WaO-PCfyRo:2356:21
+StopSession@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FPqNlKlolfn3Y1LYDKESE6ap9Nx119gMRpoCQAX-dQyWdgC9TATwOKai8qxS51EqjHivbUxAsSNZBR42HxTKWy5pCU7ZWQDs9WaO-PCfyRo:2560:31
+onShutdownEvent@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FPqNlKlolfn3Y1LYDKESE6ap9Nx119gMRpoCQAX-dQyWdgC9TATwOKai8qxS51EqjHivbUxAsSNZBR42HxTKWy5pCU7ZWQDs9WaO-PCfyRo:2586:16
+EventListenerCallback@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FPqNlKlolfn3Y1LYDKESE6ap9Nx119gMRpoCQAX-dQyWdgC9TATwOKai8qxS51EqjHivbUxAsSNZBR42HxTKWy5pCU7ZWQDs9WaO-PCfyRo:332:29
+
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 2910: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 2910: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 2910: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 2910: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+1784467080089	Marionette	INFO	Stopped listening on port 54250
+console.error: "Error in worker resource://devtools/client/shared/source-map-loader/worker.js" ": "
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 50: TypeError: can't access property "QueryInterface", aWindow.docShell is null
+Dynamically enable window occlusion 1
+1784467145494	geckodriver	INFO	Listening on 127.0.0.1:54457
+1784467148568	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54458" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\George\\AppData\\Local\\Temp\\rust_mozprofileSwpYUX"
+Dynamically enable window occlusion 0
+1784467148881	Marionette	INFO	Marionette enabled
+1784467148979	Marionette	INFO	Listening on port 54473
+Read port: 54473
+WebDriver BiDi listening on ws://127.0.0.1:54458
+1784467149025	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+1784467151185	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+1784467171174	webdriver::server	INFO	Shutting down
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1784467685600	geckodriver	INFO	Listening on 127.0.0.1:51713
+1784467688653	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51714" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\George\\AppData\\Local\\Temp\\rust_mozprofileOZDZsD"
+Dynamically enable window occlusion 0
+1784467689118	Marionette	INFO	Marionette enabled
+1784467689254	Marionette	INFO	Listening on port 51728
+WebDriver BiDi listening on ws://127.0.0.1:51714
+Read port: 51728
+1784467689377	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+1784467692947	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+console.error: "Unable to find target with innerWindowId:15032385539"
+console.error: "Unable to find target with innerWindowId:15032385539"
+console.error: "Unable to find target with innerWindowId:15032385539"
+console.error: "Unable to find target with innerWindowId:15032385539"
+console.error: "Unable to find target with innerWindowId:15032385539"
+console.error: "Unable to find target with innerWindowId:15032385539"
+console.error: "Unable to find target with innerWindowId:15032385540"
+console.error: "Unable to find target with innerWindowId:15032385540"
+console.error: "Unable to find target with innerWindowId:15032385540"
+console.error: "Unable to find target with innerWindowId:15032385540"
+console.error: "Unable to find target with innerWindowId:15032385540"
+console.error: "Unable to find target with innerWindowId:15032385540"
+JavaScript warning: https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea, line 1872: Script terminated by timeout at:
+IsPluginListEmpty@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea:1872:45
+UnregisterAll@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea:1893:17
+StopImpl@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea:1987:32
+Stop@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea:2356:21
+StopSession@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea:2560:31
+onShutdownEvent@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea:2586:16
+EventListenerCallback@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea:332:29
+EventListener.handleEvent*AddEventListener@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea:326:29
+SessionMain@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea:2581:8
+@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea:2589:3
+@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_bbf-2Nl3RSDnnz1lxCn5w0slhLDuQS34_z9ZRgSoi9GVDUp4uevTreyaJ5NPJpS5Fux65au0J_0QQp9H_qSzYviCx1rANAPnlhFAnup94GP3W9hdkShtVKblMvg-1ea:4391:4
+
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 2910: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 2910: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 2910: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+1784467755492	Marionette	INFO	Stopped listening on port 51728
+console.error: "Error in worker resource://devtools/client/shared/source-map-loader/worker.js" ": "
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 50: TypeError: can't access property "QueryInterface", aWindow.docShell is null
+Dynamically enable window occlusion 1
+1784467776744	geckodriver	INFO	Listening on 127.0.0.1:51834
+1784467779808	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51835" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\George\\AppData\\Local\\Temp\\rust_mozprofiledDG3Lp"
+Dynamically enable window occlusion 0
+1784467780319	Marionette	INFO	Marionette enabled
+1784467780441	Marionette	INFO	Listening on port 51850
+WebDriver BiDi listening on ws://127.0.0.1:51835
+Read port: 51850
+1784467780658	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+1784467784458	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+JavaScript warning: https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=KBEcNvFfzML4Hinbkh48OY1-yR5ezC8YKDA8JcKL5aQBzUN_QR3x-RkqdWG17UoZln-0ZX0WebHSPbiuJaWoor6_h_vjL930KoUIoMD49TE5hiXDwXt6CAbaO16mp7qa, line 1872: Script terminated by timeout at:
+IsPluginListEmpty@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=KBEcNvFfzML4Hinbkh48OY1-yR5ezC8YKDA8JcKL5aQBzUN_QR3x-RkqdWG17UoZln-0ZX0WebHSPbiuJaWoor6_h_vjL930KoUIoMD49TE5hiXDwXt6CAbaO16mp7qa:1872:45
+UnregisterAll@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=KBEcNvFfzML4Hinbkh48OY1-yR5ezC8YKDA8JcKL5aQBzUN_QR3x-RkqdWG17UoZln-0ZX0WebHSPbiuJaWoor6_h_vjL930KoUIoMD49TE5hiXDwXt6CAbaO16mp7qa:1893:17
+StopImpl@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=KBEcNvFfzML4Hinbkh48OY1-yR5ezC8YKDA8JcKL5aQBzUN_QR3x-RkqdWG17UoZln-0ZX0WebHSPbiuJaWoor6_h_vjL930KoUIoMD49TE5hiXDwXt6CAbaO16mp7qa:1987:32
+Stop@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=KBEcNvFfzML4Hinbkh48OY1-yR5ezC8YKDA8JcKL5aQBzUN_QR3x-RkqdWG17UoZln-0ZX0WebHSPbiuJaWoor6_h_vjL930KoUIoMD49TE5hiXDwXt6CAbaO16mp7qa:2356:21
+StopSession@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=KBEcNvFfzML4Hinbkh48OY1-yR5ezC8YKDA8JcKL5aQBzUN_QR3x-RkqdWG17UoZln-0ZX0WebHSPbiuJaWoor6_h_vjL930KoUIoMD49TE5hiXDwXt6CAbaO16mp7qa:2560:31
+onShutdownEvent@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=KBEcNvFfzML4Hinbkh48OY1-yR5ezC8YKDA8JcKL5aQBzUN_QR3x-RkqdWG17UoZln-0ZX0WebHSPbiuJaWoor6_h_vjL930KoUIoMD49TE5hiXDwXt6CAbaO16mp7qa:2586:16
+EventListenerCallback@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=KBEcNvFfzML4Hinbkh48OY1-yR5ezC8YKDA8JcKL5aQBzUN_QR3x-RkqdWG17UoZln-0ZX0WebHSPbiuJaWoor6_h_vjL930KoUIoMD49TE5hiXDwXt6CAbaO16mp7qa:332:29
+
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 2910: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 2910: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 2910: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+1784468329935	Marionette	INFO	Stopped listening on port 51850
+console.error: "Error in worker resource://devtools/client/shared/source-map-loader/worker.js" ": "
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 50: TypeError: can't access property "QueryInterface", aWindow.docShell is null
+Dynamically enable window occlusion 1
+1784468346385	geckodriver	INFO	Listening on 127.0.0.1:58064
+1784468349426	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58065" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\George\\AppData\\Local\\Temp\\rust_mozprofile7ZLwIh"
+Dynamically enable window occlusion 0
+1784468349951	Marionette	INFO	Marionette enabled
+1784468350103	Marionette	INFO	Listening on port 58078
+WebDriver BiDi listening on ws://127.0.0.1:58065
+Read port: 58078
+1784468350322	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+1784468354297	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+1784469135598	webdriver::server	INFO	Shutting down
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1784469219113	geckodriver	INFO	Listening on 127.0.0.1:62512
+1784469222189	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62513" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\George\\AppData\\Local\\Temp\\rust_mozprofileyfmzsQ"
+Dynamically enable window occlusion 0
+1784469222700	Marionette	INFO	Marionette enabled
+1784469222856	Marionette	INFO	Listening on port 62528
+WebDriver BiDi listening on ws://127.0.0.1:62513
+Read port: 62528
+1784469223006	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+1784469227097	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+1784469234939	Marionette	INFO	Stopped listening on port 62528
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 50: TypeError: can't access property "QueryInterface", aWindow.docShell is null
+Dynamically enable window occlusion 1
