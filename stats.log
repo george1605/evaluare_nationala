@@ -1,0 +1,30 @@
+Comparing 2026 and 2025 grades:
+
+--- 2025 Grades --- 
+Count: 3000
+Mean: 8.78
+Median: 8.80
+Std Dev: 0.63
+Position of 8.82: 1456
+Pozitia 9.05: 1114
+
+--- 2026 Grades --- 
+Count: 2980
+Mean: 8.48
+Median: 8.55
+Std Dev: 0.73
+Position of 8.82: 1062
+Nota pt 1055: 9.1
+
+
+Grades in interval [8.6, 9.3]: 992 (2026), 1057 (2025)
+Grades in interval [8.2, 8.82]: 799 (2026), 858 (2025)
+Estimated change: [-0.2980718791946302, 0.0]
+Estimated change via second method: [-0.25, -0.23000000000000043]
+Change of mean in group2: -0.10089746074820738
+Most frequent grade in 2025: 9.4, in 2026: 8.8
+Generated convolution array:  [220653.0905 220632.9806 220612.8739 220592.7692 220572.6682 220552.5678
+ 220532.4678 220512.3706 220492.2765 220472.399  220452.523  220432.694
+ 220413.0106 220393.3278 220373.8607 220354.3936 220334.9298 220315.469
+ 220296.0094 220276.5506 220256.8939]
+Wasserstein distance:  0.29807187919463085

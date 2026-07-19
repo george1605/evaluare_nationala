@@ -4,12 +4,14 @@ import csv
 import matplotlib.pyplot as plt
 import multiprocessing as mp
 from scipy import signal
+from scipy.stats import wasserstein_distance
 import pandas as pd
 
 LOG_FILE=open("stats.log", "w") # For console you can set it to None
 GENERATE_HISTOGRAMS=True
 CALCULATE_CONVOLUTION=True
-USE_PARQUET = True # If you want to export to Parquet
+COMPUTE_WASSERSTEIN=True
+USE_PARQUET = False # If you want to export to Parquet
 PARQUET_FILE1 = 'en.parquet'
 PARQUET_FILE2 = 'en_2025.parquet'
 
@@ -55,30 +57,39 @@ print("\n", file=LOG_FILE)
 print(f"Grades in interval [8.6, 9.3]: {len([x for x in medii if 8.6 <= x < 9.3])} (2026), {len([x for x in medii_2025 if 8.6 <= x < 9.3])} (2025)", file=LOG_FILE)
 print(f"Grades in interval [8.2, 8.82]: {len([x for x in medii if 8.2 <= x < 8.82])} (2026), {len([x for x in medii_2025 if 8.2 <= x < 8.82])} (2025)", file=LOG_FILE)
 
-# Calculate mean of 75 percentile of 2025 grades
-percentile_75_2025 = np.percentile(medii_2025, 75).mean()
-percentile_75_2026 = np.percentile(medii, 75).mean()
+def calculate_diff():
+    # Calculate mean of 75 percentile of 2025 grades
+    percentile_75_2025 = np.percentile(medii_2025, 75).mean()
+    percentile_75_2026 = np.percentile(medii, 75).mean()
 
-threshold_2025 = np.percentile(medii_2025, 90)
-threshold_2026 = np.percentile(medii, 90)
+    threshold_2025 = np.percentile(medii_2025, 90)
+    threshold_2026 = np.percentile(medii, 90)
 
-group2_2025 = [x for x in medii_2025 if 9.30 <= x < threshold_2025]
-group2_2026 = [x for x in medii if 9.30 <= x < threshold_2026]
+    group2_2025 = [x for x in medii_2025 if 9.30 <= x < threshold_2025]
+    group2_2026 = [x for x in medii if 9.30 <= x < threshold_2026]
 
-print(f"Estimated change: [{np.mean(medii) - np.mean(medii_2025)}, {np.max(medii) - np.max(medii_2025)}]", file=LOG_FILE)
-print(f"Estimated change via second method: [{np.median(medii) - np.median(medii_2025)}, {percentile_75_2026 - percentile_75_2025}]", file=LOG_FILE)
+    print(f"Estimated change: [{np.mean(medii) - np.mean(medii_2025)}, {np.max(medii) - np.max(medii_2025)}]", file=LOG_FILE)
+    print(f"Estimated change via second method: [{np.median(medii) - np.median(medii_2025)}, {percentile_75_2026 - percentile_75_2025}]", file=LOG_FILE)
 
-print(f"Change of mean in group2: {np.mean(group2_2026) - np.mean(group2_2025)}", file=LOG_FILE)
+    print(f"Change of mean in group2: {np.mean(group2_2026) - np.mean(group2_2025)}", file=LOG_FILE)
 
-values, counts = np.unique(np.round(medii, 1), return_counts=True)
-values_2025, counts_2025 = np.unique(np.round(medii_2025, 1), return_counts=True)
+def calculate_freq():
+    values, counts = np.unique(np.round(medii, 1), return_counts=True)
+    values_2025, counts_2025 = np.unique(np.round(medii_2025, 1), return_counts=True)
 
-most_frequent_2025 = values_2025[np.argmax(counts_2025)]
-most_frequent = values[np.argmax(counts)]
-print(f"Most frequent grade in 2025: {most_frequent_2025}, in 2026: {most_frequent}", file=LOG_FILE)
+    most_frequent_2025 = values_2025[np.argmax(counts_2025)]
+    most_frequent = values[np.argmax(counts)]
+    print(f"Most frequent grade in 2025: {most_frequent_2025}, in 2026: {most_frequent}", file=LOG_FILE)
+
+calculate_diff()
+calculate_freq()
 
 if CALCULATE_CONVOLUTION:
     print(f"Generated convolution array: ", signal.fftconvolve(medii, medii_2025, "valid"), file=LOG_FILE)
+
+if COMPUTE_WASSERSTEIN:
+    distance = wasserstein_distance(medii_2025, medii)
+    print(f"Wasserstein distance: ", distance, file=LOG_FILE)
 
 def histogram(year=2025) -> str | None:
     if year not in [2025, 2026]:
