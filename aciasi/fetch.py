@@ -3,6 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import pandas as pd
 import time
+from io import StringIO
 
 driver = webdriver.Firefox()
 driver.implicitly_wait(2)
@@ -22,7 +23,8 @@ link = driver.find_element(by=By.XPATH, value='/html/body/section[2]/div[12]/div
 link.click()
 table = driver.find_element(by=By.ID, value="admisACCTITable")
 
-df = pd.read_html(table.get_attribute("outerHTML"))[0]
+html = table.get_attribute("outerHTML")
+df = pd.read_html(StringIO(html))[0]
 df.to_csv('ac.csv')
 time.sleep(2.5)
 driver.close()
